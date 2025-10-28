@@ -1,0 +1,53 @@
+/* Paleta */
+:root {
+    --dark-slate-gray: #335c67ff;
+    --vanilla: #fff3b0ff;
+    --hunyadi-yellow: #e09f3eff;
+    --auburn: #9e2a2bff;
+    --chocolate-cosmos: #540b0eff;
+}
+
+/* Fondo general */
+.stApp {
+    background: linear-gradient(to bottom right, var(--vanilla), #fff);
+    font-family: 'Segoe UI', sans-serif;
+    color: var(--dark-slate-gray);
+}
+
+/* Encabezados */
+h1, h2, h3 {
+    color: var(--chocolate-cosmos);
+    font-weight: 500;
+}
+
+/* Mensajes del chat */
+div[data-testid="stChatMessage"][class*="user"] {
+    background-color: rgba(51, 92, 103, 0.1); /* dark-slate-gray muy suave */
+    color: var(--chocolate-cosmos);
+    text-align: right;
+    border-radius: 16px;
+    padding: 10px 14px;
+    margin: 6px 0;
+}
+
+div[data-testid="stChatMessage"][class*="assistant"] {
+    background-color: rgba(224, 159, 62, 0.15); /* hunyadi-yellow translúcido */
+    color: var(--dark-slate-gray);
+    border-radius: 16px;
+    padding: 10px 14px;
+    margin: 6px 0;
+}
+
+/* Input del chat */
+.stChatInput {
+    border-radius: 12px !important;
+    border: 1px solid rgba(51, 92, 103, 0.4);
+    background-color: #fff;
+    color: var(--chocolate-cosmos);
+    transition: all 0.2s ease;
+}
+
+.stChatInput:focus-within {
+    border-color: var(--dark-slate-gray);
+    box-shadow: 0 0 4px rgba(51, 92, 103, 0.3);
+}
