@@ -1,23 +1,25 @@
 [README.md](https://github.com/user-attachments/files/23196843/README.md)
 # **Chatbot RAG**
 
-![Badge: Streamlit](https://img.shields.io/badge/Framework-Streamlit-red) 
-![Badge: LangChain](https://img.shields.io/badge/NLP-LangChain-blue) 
-![Badge: Pinecone](https://img.shields.io/badge/Embeddings-Pinecone-green) 
-![Badge: OpenAI](https://img.shields.io/badge/API-OpenAI-lightblue) 
-
+Framework: Streamlit | NLP: LangChain | Embeddings: Pinecone | API: OpenAI
 
 ## **Descripción del proyecto**
-Este chatbot está diseñado para operar como un sistema RAG (Retrieval-Augmented Generation) y utiliza como base de conocimiento un paper de investigación académica del área de la lingüística sobre la interacción entre humanos y chatbots.
+Este proyecto implementa un chatbot basado en RAG (Retrieval-Augmented Generation).
 
-Documento fuente: [acceso a la base de conocimiento](https://www.researchgate.net/publication/392355242_Interaccion_humanx-chatbot_estudio_exploratorio_sobre_variedades_linguisticas_acomodacion_y_desigualdadSpanish)
+El modelo combina generación de lenguaje con un sistema de recuperación de información, lo cual permite responder preguntas utilizando como base de conocimiento, en este caso, un paper académico del área de la lingüística, centrado en la interacción entre humanos y chatbots.
+
+El objetivo es explorar cómo integrar contenido especializado dentro de un flujo conversacional y ofrecer respuestas basadas en una fuente científica. 
+
+Documento fuente: Salerno, Paula & Vilar, Milagros. (2025). Interacción humanx-chatbot : estudio exploratorio sobre variedades lingüísticas, acomodación y desigualdad Spanish. Matraga - Revista do Programa de Pós-Graduação em Letras da UERJ. 32. 266-289. 10.12957/matraga.2025.88189.
+
+Disponible en: [acceso a la base de conocimiento](https://www.researchgate.net/publication/392355242_Interaccion_humanx-chatbot_estudio_exploratorio_sobre_variedades_linguisticas_acomodacion_y_desigualdadSpanish)
 
 
 ### **Tecnologías utilizadas**
-- **LangChain:** para la integración del flujo conversacional.  
+- **LangChain:** integración del flujo conversacional.  
 - **OpenAI:** generación de respuestas utilizando GPT.  
-- **Pinecone:** para almacenar y buscar embeddings de los documentos.  
-- **Streamlit:** interfaz interactiva y amigable para el usuario.
+- **Pinecone:** almacenamiento y búsqueda de embeddings del documento fuente.  
+- **Streamlit:** interfaz interactiva para el usuario.
 
 ---
 
@@ -25,10 +27,10 @@ Documento fuente: [acceso a la base de conocimiento](https://www.researchgate.ne
 
 Visitar la versión desplegada del proyecto y probar todas sus funcionalidades en tiempo real. 
 
-🔗 [Accede al proyecto aquí](https://chatbot-rag-ling.streamlit.app/)
+[Acceder al proyecto aquí](https://chatbot-rag-ling.streamlit.app/)
 
 
-### Algunas preguntas de ejemplo sobre el texto cargado para probar el funcionamiento:
+### Algunas preguntas de ejemplo sobre el documento cargado para probar el funcionamiento:
 
 1. ¿Cuál fue el propósito de iniciar la conversación con GPT y Gemini en el estudio?
 
@@ -38,7 +40,7 @@ Visitar la versión desplegada del proyecto y probar todas sus funcionalidades e
 
 4. ¿Cómo se superaron las dificultades en la acomodación del bot en el estudio?
 
-5. ¿Por qué se eligieron trabajar con los chatbots ChatGPT de OpenAI y Gemini de Google DeepMind?
+5. ¿Por qué se optó por trabajar con los chatbots ChatGPT de OpenAI y Gemini de Google DeepMind?
 
 6. ¿Qué elementos se consideraron al diseñar los prompts para las interacciones?
 
@@ -70,12 +72,12 @@ Visitar la versión desplegada del proyecto y probar todas sus funcionalidades e
 
 ### **2. Instalación de Dependencias**  
 
-1. Crea un entorno virtual:  
+1. Crear un entorno virtual:  
    ```bash
    python -m venv venv
    source venv/bin/activate  # En Windows: venv\Scripts\activate # Si powershell tira error de politica, ejecutar: Set-ExecutionPolicy Bypass -Scope Process y luego venv\Scripts\activate
 
-2. Instala las dependencias
+2. Instalar las dependencias
     ```bash
     pip install -r requirements.txt
 
@@ -90,6 +92,28 @@ Visitar la versión desplegada del proyecto y probar todas sus funcionalidades e
     PINECONE_INDEX = "nombre_de_tu_indice"
 
 ### **4. Ejecución del Chatbot**
-Una vez instaladas las dependencias y configuradas las variables, ejecutar para abrir la aplicación en navegador:
-   ```bash
-   streamlit run main.py
+
+1. Una vez instaladas las dependencias y configuradas las variables de entorno, ejecutar el siguiente comando para abrir la aplicación en el navegador:
+    ```bash
+    streamlit run main.py
+    ```
+
+
+### **5. Próximos pasos del proyecto**
+* Analizar el lenguaje utilizado en las respuestas generadas por el chatbot para identificar patrones, sesgos y características lingüísticas.
+* Evaluar la calidad de las respuestas mediante métricas de recuperación y generación.
+* Comparar distintos modelos de búsqueda semántica.
+* Mejorar la extracción de fragmentos relevantes para optimizar la etapa de retrieval.
+* Ajustar un modelo para detectar intenciones y clasificar preguntas.
+* Integrar herramientas de análisis lingüístico (POS tagging, dependencias, análisis pragmático).
+
+### **Contact me**
+
+<a href="https://www.linkedin.com/in/nataliariera/">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="25"/>
+</a>
+
+<a href="https://www.instagram.com/tradunati/">
+  <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" width="25"/>
+</a>
+
